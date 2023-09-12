@@ -1,4 +1,8 @@
 # BackendDjango
+Proyecto backend cuatro vistas en Django. 1 inicio 3 productos con 3 items respectivamente . No se utilizo base de datos!.
+
+# Para probar la app
+
 ```console
 foo@bar:~$ git clone git@github.com:V60cup/BackendDjango.git #Si tienes ssh como preferencia
 foo@bar:~$ git clone https://github.com/V60cup/BackendDjango.git #Si tienes https como preferencia
@@ -11,9 +15,6 @@ foo@bar:~$ pip install -r requirements.txt
 
 ```
 
-Proyecto backend cuatro vistas en Django. 1 inicio 3 productos con 3 items respectivamente . No se utilizo base de datos!.
-
-# Para probar la app
 
 
 # Caracteristicas 
