@@ -1,11 +1,79 @@
 {% extends 'base.html' %}
-
+{% load static %}
 
 {% block title %} Cursos {% endblock %}
 
 {% block body %}
 
-<h1> Producto3 </h1>
+<header>
+    <br>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container text-center">
+          <h1 class="display-4">Cursos de Barismo</h1>
+          <p class="lead">Adquiere los conocimientos y habilidades para elaborar, degustar y compartir acerca del café.</p>
+        </div>
+      </div>
+</header>
+
+<div class="card-deck d-flex">
+
+    <div class="card">
+      <img src="{% static 'img/cursos/barismo.jpg'%}" class="card-img-top " alt="...">
+      <div class="card-body">
+        <h4 class="card-title">Barista Integral</h5>
+        <p class="card-text">Barista Integral comprende el conocimiento práctico y teórico de elaboracion de bebidas a base de espresso y lo lleva directamente a una barra profesional. 
+
+            Contarás con la guía del instructor, con basta experiencia en diversas barras, máquinas y preparaciones.
+            
+            Desde sistemas de máquinas, organización de tu espacio de trabajo, exploración sensorial y detalle profundo sobre la preparación del espresso. Barista 1 te permitirá avanzar en historia cafetera y afianzar tu manejo de la barra. 
+            
+            ¿Quieres dedicarte al café desde una cafetería? ¿Te gustaría poder desempeñarte como barista en el extranjero? Barista 1 es el puntapié inicial para adentrarte de lleno en la preparación del Espresso. </p>
+      </div>
+      <div class="card-footer">
+        <div class="d-flex justify-content-between total font-weight-bold">
+            <span>Valor</span><span>$200.000</span>
+        </div><br>
+        <button type="button" class="btn btn-secondary">Comprar</button>
+        <button type="button" class="btn btn-success">Añadir canasta</button>
+      </div>
+    </div>
+
+    <div class="card">
+        <img src="{% static 'img/cursos/filtrado.jpg'%}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Métodos preparaciones</h5>
+          <p class="card-text"> Este curso es la base angular para entender los fundamentos de la infusión de café. La diferencia entre estos y un café Espresso, identificación de variables y recetas.
+
+            Repasaremos las diferencias organolépticas entre tipos de café mediante degustación y análisis, y se comprenderán las distintas recetas y sistemas de infusión para identificar y lograr recetas propias</p>
+        </div>
+        <div class="card-footer">
+          <div class="d-flex justify-content-between total font-weight-bold">
+                <span>Valor</span><span>$80.000</span>
+          </div><br>
+          <button type="button" class="btn btn-secondary">Comprar</button>
+          <button type="button" class="btn btn-success">Añadir canasta</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="{% static 'img/cursos/latteart.jpg'%}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Latte Art</h5>
+          <p class="card-text">Con un repaso teórico, una profunda práctica y un completo entendimiento del cómo y porqué de la texturización de la leche, serás capaz de poder desarrollarte como el o la más hábil artista del café. 
+
+            ¡Aprende esta habilidad y dale un valor agregado a tu café! Porque una de las dimensiones del café es cómo se ve, ten a la mano todo el conocimiento para sorprender y comprender todos los peros técnicos y prácticos de lo que conlleva ser eficiente y preciso al dibujar.</p>
+    
+        </div>
+        <div class="card-footer">
+          <div class="d-flex justify-content-between total font-weight-bold">
+                <span>Valor</span><span>$60.000</span>
+          </div><br>
+          <button type="button" class="btn btn-secondary">Comprar</button>
+          <button type="button" class="btn btn-success">Añadir canasta</button>
+        </div>
+      </div>
+
+  </div>
 
 {% endblock %}
 

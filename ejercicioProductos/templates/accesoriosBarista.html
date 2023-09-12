@@ -1,11 +1,74 @@
 {% extends 'base.html' %}
-
+{% load static %}
 
 {% block title %} Accesorios {% endblock %}
 
 {% block body %}
 
-<h1> Producto2 </h1>
+<header>
+    <br>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container text-center">
+          <h1 class="display-4">Accesorios para café</h1>
+          <p class="lead">Variedad de métodos para todas tus preparaciones.</p>
+        </div>
+      </div>
+</header>
+
+<div class="card-deck d-flex">
+
+    <div class="card">
+      <img src="{% static 'img/accesorios/aeropress.png'%}" class="card-img-top " alt="...">
+      <div class="card-body">
+        <h4 class="card-title">Aeropress</h5>
+        <p class="card-text">Aeropress ha ganado su fama por ser uno de los métodos más versátiles del mundo entre los profesionales y amantes del café.
+            Combina las ventajas de la prensa francesa, métodos de filtrados y métodos tradicionales de preparar café, lo que facilita mucho la preparación de tu café.
+            Este método permite preparar hasta 250ml de bebida de café y el proceso solo tarda un par de minutos. Además, es ligera resistente y la puedes llevar a todos lados para disfrutar tu bebida favorita donde quiera que estés.</p>
+      </div>
+      <div class="card-footer">
+        <div class="d-flex justify-content-between total font-weight-bold">
+            <span>Valor</span><span>$34.990</span>
+         </div><br>
+        <button type="button" class="btn btn-secondary">Comprar</button>
+        <button type="button" class="btn btn-success">Añadir canasta</button>
+      </div>
+    </div>
+
+    <div class="card">
+        <img src="{% static 'img/accesorios/chemex.png'%}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Chemex</h5>
+          <p class="card-text"> Disfruta de tu café de la mejor forma preparado en Chemex.
+            Con la versión de 6 tazas puedes preparar hasta 900ml de bebida perfectamente preparada en uno de los métodos de café filtrado más famosos del mundo.
+            Creada en 1941 por Dr. Pete Schlumbohm, está fabricada en una sola pieza de cristal borosilicato altamente resistente a altas temperaturas. Posee un cinturón fabricado en madera que sirve para sostener tu Chemex al momento de servir tu café. Su forma de reloj de arena ha sido reconocida como uno de los diseños más asombrosos, tanto que es parte de la exhibición permanente del Museo de Arte Moderno de Nueva York.
+            Para preparar un café en tu Chemex necesitas utilizar filtros de papel.</p>
+        </div>
+        <div class="card-footer">
+          <div class="d-flex justify-content-between total font-weight-bold">
+                <span>Valor</span><span>$45.600</span>
+          </div><br>
+          <button type="button" class="btn btn-secondary">Comprar</button>
+          <button type="button" class="btn btn-success">Añadir canasta</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="{% static 'img/accesorios/origami.jpg'%}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Origami</h5>
+          <p class="card-text">El origami dripper es uno de los nuevos métodos más famosos, fabricado en Japón con porcelana Mino, permite preparar hasta 2 tazas de café. Su nombre proviene del arte de doblar papel y su diseño está inspirado en las bellas y coloridas creaciones de este arte.</p>
+    
+        </div>
+        <div class="card-footer">
+          <div class="d-flex justify-content-between total font-weight-bold">
+                <span>Valor</span><span>$26.000</span>
+          </div><br>
+          <button type="button" class="btn btn-secondary">Comprar</button>
+          <button type="button" class="btn btn-success">Añadir canasta</button>
+        </div>
+      </div>
+
+  </div>
 
 {% endblock %}
 

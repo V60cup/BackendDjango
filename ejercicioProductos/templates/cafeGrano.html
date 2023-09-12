@@ -1,11 +1,73 @@
 {% extends 'base.html' %}
-
+{% load static %}
 
 {% block title %} Cafe {% endblock %}
 
 {% block body %}
-<h1 class="page-header"> Café de especialidad </h1>
+<header>
+    <br>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container text-center">
+          <h1 class="display-4">Café en grano</h1>
+          <p class="lead">Tostado a pedido y cuidadosamente seleccionado.</p>
+        </div>
+      </div>
+</header>
 
+<div class="card-deck d-flex">
+
+    <div class="card">
+      <img src="{% static 'img/cafegrano/colAntioquia.jpg'%}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">La Gabriela</h5>
+        <p class="card-text">Antioquia - Colombia</p>
+                <h5>Notas de Cata</h5>
+                <p>Licor de Almendras, Pasas y Chocolate</p>
+      </div>
+      <div class="card-footer">
+        <div class="d-flex justify-content-between total font-weight-bold">
+              <span>Valor</span><span>$11.900</span>
+        </div><br>
+        <button type="button" class="btn btn-secondary">Comprar</button>
+        <button type="button" class="btn btn-success">Añadir canasta</button>
+      </div>
+    </div>
+
+    <div class="card">
+        <img src="{% static 'img/cafegrano/ruandaMacuba.jpg'%}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Nyamasheke</h5>
+          <p class="card-text">Ruanda - Macuba</p>
+                  <h5>Notas de Cata</h5>
+                  <p>Naranja confitada, Te negro y Nibs cacao</p>
+        </div>
+        <div class="card-footer">
+          <div class="d-flex justify-content-between total font-weight-bold">
+            <span>Valor</span><span>$15.000</span>
+          </div><br>
+          <button type="button" class="btn btn-secondary">Comprar</button>
+          <button type="button" class="btn btn-success">Añadir canasta</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="{% static 'img/cafegrano/brasilIsidro.jpg'%}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Isidro Pereira</h5>
+          <p class="card-text">Carmo de minas - Brasil</p>
+                  <h5>Notas de Cata</h5>
+                  <p>Cacao, Avellana y Crema</p>
+        </div>
+        <div class="card-footer">
+          <div class="d-flex justify-content-between total font-weight-bold">
+            <span>Valor</span><span>$9.500</span>
+          </div><br>
+          <button type="button" class="btn btn-secondary">Comprar</button>
+          <button type="button" class="btn btn-success">Añadir canasta</button>
+        </div>
+      </div>
+
+  </div>
 
 {% endblock %}
 
